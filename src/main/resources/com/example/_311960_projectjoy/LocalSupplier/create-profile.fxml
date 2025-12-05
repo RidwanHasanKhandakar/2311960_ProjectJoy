@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._311960_projectjoy.LocalSupplier.">
+   <children>
+      <Text layoutX="52.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: " />
+      <Text layoutX="52.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trade License: " />
+      <Text layoutX="52.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIN/TIN: " />
+      <Text layoutX="52.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank: " />
+      <TextField fx:id="nameTextField" layoutX="144.0" layoutY="77.0" />
+      <TextField fx:id="tradeLicenseTextField" layoutX="144.0" layoutY="112.0" />
+      <TextField fx:id="binTinTextField" layoutX="144.0" layoutY="145.0" />
+      <TextField fx:id="bankTextField" layoutX="144.0" layoutY="175.0" />
+      <Button fx:id="saveProfileButton" layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleSaveProfileButton" text="Save Profile" />
+      <Label layoutX="191.0" layoutY="14.0" text="Vendor Profile Setup">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="199.0" layoutY="302.0" prefHeight="17.0" prefWidth="191.0" />
+      <Button fx:id="homeButton" layoutX="488.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" />
+   </children>
+</AnchorPane>

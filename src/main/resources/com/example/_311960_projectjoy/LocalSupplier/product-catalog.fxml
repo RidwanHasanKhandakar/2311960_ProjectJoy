@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._311960_projectjoy.LocalSupplier.ProductCatalogController">
+   <children>
+      <Label layoutX="216.0" layoutY="14.0" text="Product Catalog">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="24.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name: " />
+      <Text layoutX="25.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit: " />
+      <Text layoutX="25.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: " />
+      <Text layoutX="25.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOQ: " />
+      <Text layoutX="24.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lead Time: " />
+      <TextField fx:id="itemNameTextField" layoutX="114.0" layoutY="71.0" />
+      <TextField fx:id="unitNameTextField" layoutX="115.0" layoutY="102.0" />
+      <TextField fx:id="priceNameTextField" layoutX="115.0" layoutY="130.0" />
+      <TextField fx:id="mOQTextField" layoutX="115.0" layoutY="158.0" />
+      <Button fx:id="validateButton" layoutX="115.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleValidateButton" text="Validate" />
+      <Button fx:id="homeButton" layoutX="504.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" />
+      <TableView fx:id="productCatalogTableView" layoutX="278.0" layoutY="71.0" prefHeight="200.0" prefWidth="308.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="unitCol" prefWidth="45.0" text="Unit" />
+            <TableColumn fx:id="priceCol" prefWidth="56.0" text="Price" />
+            <TableColumn fx:id="mOQCol" prefWidth="56.0" text="MOQ" />
+            <TableColumn fx:id="leadTimeCol" prefWidth="75.0" text="Lead Time" />
+        </columns>
+      </TableView>
+      <Button fx:id="refreshButton" layoutX="403.0" layoutY="279.0" mnemonicParsing="false" onAction="#handleRefreshButton" text="Refresh" />
+      <DatePicker fx:id="leadTimeDatePicker" layoutX="115.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

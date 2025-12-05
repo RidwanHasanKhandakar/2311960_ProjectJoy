@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="371.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example._311960_projectjoy.LocalSupplier.NewInvoiceController">
+   <children>
+      <Label layoutX="103.0" layoutY="14.0" text="Invoice &amp; Track Payment">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="47.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter PO#: " />
+      <Text layoutX="47.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount: " />
+      <Text layoutX="47.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax%: " />
+      <TextField fx:id="enterPoTextField" layoutX="143.0" layoutY="74.0" />
+      <TextField fx:id="amountTextField" layoutX="143.0" layoutY="118.0" />
+      <TextField fx:id="taxTextField" layoutX="143.0" layoutY="163.0" />
+      <Button fx:id="validateButton" layoutX="167.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleValidateButton" text="Validate" />
+      <Button fx:id="saveInvoiceButton" layoutX="195.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleSaveInvoiceButton" text="Save Invoice" />
+      <Button fx:id="homeButton" layoutX="409.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleHomeButton" text="Home" />
+   </children>
+</AnchorPane>
